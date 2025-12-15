@@ -276,6 +276,19 @@ body {
     margin-top: 0.3rem;
 }
 
+/* Remove default browser box and spacing around fieldsets used in forms */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+}
+
 /* Message styling for info/warning/success feedback */
 .message {
     margin-top: 0.75rem;
