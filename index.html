@@ -120,20 +120,25 @@
             <!-- Form for entering points scored in the current turn -->
             <form id="turn-form" class="turn-form">
                 <fieldset>
-                    <legend class="visually-hidden">Add points for the current player</legend>
+                    <legend class="visually-hidden">Record a turn</legend>
                     <!-- Input + action buttons for recording or undoing a turn -->
                     <div class="field-row">
                         <div class="field-group">
                             <label for="points-input">Points scored</label>
                             <input
                                 id="points-input"
+                                name="points"
                                 type="number"
                                 min="0"
                                 max="180"
                                 step="1"
                                 inputmode="numeric"
+                                enterkeyhint="done"
+                                autocomplete="off"
+                                aria-describedby="points-hint"
                                 required
                             />
+                            <small id="points-hint" class="hint">Enter 0–180 (max 3 darts).</small>
                         </div>
                         <button type="submit" id="add-turn-button" class="primary-button" disabled>
                             Add turn
