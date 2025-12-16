@@ -59,7 +59,7 @@ function setupEventHandlers() {
         showInfoMessage(ui, "All data cleared. Start a new set.");
     });
 
-    // Handle submission of the turn form (user entering points scored).
+    // Handle submission of the turn form.
     turnForm.addEventListener("submit", evt => {
         evt.preventDefault();
         handleAddTurn();

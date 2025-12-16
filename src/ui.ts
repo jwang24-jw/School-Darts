@@ -152,14 +152,14 @@ export function showInfoMessage(ui: UiElements, text: string): void {
     ui.message.classList.add("message--info");
 }
 
-// Display a warning message to the user (used for invalid inputs or blocked actions).
+// Display a warning message to the user.
 export function showWarningMessage(ui: UiElements, text: string): void {
     ui.message.textContent = text;
     ui.message.classList.remove("message--info", "message--success");
     ui.message.classList.add("message--warning");
 }
 
-// Display a success message (e.g., leg won, valid scoring action).
+// Display a success message.
 export function showSuccessMessage(ui: UiElements, text: string): void {
     ui.message.textContent = text;
     ui.message.classList.remove("message--info", "message--warning");
