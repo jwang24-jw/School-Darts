@@ -89,7 +89,7 @@ body {
 /* Hover effect for cards */
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6);
 }
 
 /* Layout for card headers containing section titles and buttons */
